@@ -19,11 +19,11 @@ const float& TableauBorne::operator[](int index) const
 float TableauBorne::operator()(int index, float valeur)
 {
 	if (index < 0 || index >= taille) {
-		cerr << "Index hors limites !" << endl;
+		cout << "Index hors limites !" << endl;
 		exit;
 	}
 	if (valeur < start || valeur > end) {
-		cerr << "Valeur hors bornes [" << start << ", " << end << "] !" << endl;
+		cout << "Valeur hors bornes [" << start << ", " << end << "] !" << endl;
 		exit;
 	}
 	data[index] = valeur;
